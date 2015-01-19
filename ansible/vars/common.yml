@@ -1,0 +1,4 @@
+---
+    doc_root: /vagrant/magento2
+    sys_packages: ["git"]
+    dist: precise

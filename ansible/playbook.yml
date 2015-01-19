@@ -1,0 +1,18 @@
+---
+- hosts: all
+  sudo: true
+  vars:
+    web_server: magento2.dev
+    servername: mage2.dev 192.168.33.99
+    timezone: Europe/Kiev
+  vars_files:
+    - vars/percona.yml
+    - vars/common.yml
+    - [ "vars/ws_defaults.yml" ]
+  roles:
+    - init
+    - nginx
+    - percona
+    - composer
+    - hhvm
+    - app

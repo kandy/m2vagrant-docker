@@ -1,0 +1,4 @@
+database:
+    db: magento2
+    user: admin
+    pass: 123123q
